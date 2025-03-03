@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;italic&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@layer base {
+  :root {
+    --fill-color: rgb(23 37 84);
+    --fill-color-indicator: rgb(147 51 234);
+    --text-color: white;
+  }
+  
+  .theme-dark {
+    --fill-color: rgb(148 163 184);
+    --fill-color-indicator: rgb(51 65 85);
+    --text-color: white;
+  }
+  
+  .theme-purple {
+    --fill-color: rgb(153 27 27);
+    --fill-color-indicator: rgb(127 29 29);
+    --text-color: rgb(245, 245, 32);
+  }
+  
+  .theme-grey {
+    --fill-color: rgb(82 82 82);
+    --fill-color-indicator: rgb(23 23 23);
+    --text-color: rgb(214, 27, 27);
+  }
+  
+  .theme-rose {
+    --fill-color: rgb(76 5 25);
+    --fill-color-indicator: rgb(147 51 234);
+    --text-color: rgb(17, 17, 240);
+  }
+}
+
+@layer utilities {
+  .text-skin-base {
+    color: var(--text-color);
+  }
+}
+@media (prefers-color-scheme: root) {
+  .text-gray-100 {
+      color: rgb(20, 74, 129); /* Light gray for dark mode */
+  }
+}
+
+
+
+@layer components {
+  .active-state {
+    @apply mr-8 last:mr-0 text-skin-base after:block after:w-2 after:bg-skin-indicator
+    after:rounded flex flex-col items-center;
+  }
+
+  .inactive-state {
+    @apply mr-8 last:mr-0 text-skin-base;
+  }
+}
+/* button, [type='button'], [type='reset'], [type='submit'] {
+  -webkit-appearance: button;
+  background-color: rgb(19, 15, 231);
+  background-image: none;
+} */
+
+
+/* .sc-jsEeTM.kUMlDB.rdt_TableRow{
+    border-bottom-width:0px !important;
+} */
+
+/*dropdownCss*/
+
+.Dropdown-control{
+    background-color: transparent !important;
+    
+    padding: 4px 52px 4px 10px !important;
+    border: none !important;    
+}
+
+.Dropdown-arrow {
+    border-style: inset !important;
+}
+
+.shadow-bottom {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    code {
+      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Poppins',
+        monospace;
+    }
+    /* Example: Limit z-index and adjust styling to avoid interference with modal */
+.data-table-wrapper {
+  position: relative;
+  z-index: 1; /* Ensure it's low so it doesn't overlap modal */
+}
+
+
+
+.Dropdown-placeholder.is-selected{
+  font-size:small !important ;
+}
+.Dropdown-option.is-selected{
+  font-size:small !important ;
+}
+.Dropdown-option{
+  font-size:small !important ;
+}

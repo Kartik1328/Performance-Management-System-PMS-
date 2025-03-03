@@ -1,0 +1,103 @@
+/* @import "~bootstrap/dist/css/bootstrap.css";
+@import "~formiojs/dist/formio.full.min.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+button,
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  
+  background-image: none;
+}
+
+[type='Reset'],
+[type='submit'] {
+  background-color: blue !important;
+  background-image: none;
+}
+
+.fa-refresh:before {
+  content: none !important
+}
+
+.MuiBackdrop-root.MuiModal-backdrop.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  opacity: 0.6 !important;
+}
+
+.Dropdown-root {
+  width: 150px !important;
+  outline: none !important;
+  font-size: 17px !important;
+
+}
+
+.Dropdown-arrow {
+  border-color: #020a12 transparent transparent !important;
+  border-width: 10px 10px !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+}
+
+
+.Dropdown-control {
+  border: 0px !important;
+}
+
+.Dropdown-placeholder.is-selected {
+  font-weight: 650 !important;
+}
+
+
+
+.Dropdown-option {
+
+  font-weight: bold !important;
+}
+
+
+
+
+.css-1bs57xn {
+  border: 0px !important;
+}
+/* Custom Swal styles */
+.swal2-popup {
+  font-family: 'Poppins', sans-serif; /* Change to your preferred font */
+  color: #333; /* Text color */
+}
+
+.swal2-title {
+  color: #4CAF50; /* Title color */
+}
+
+.swal2-text {
+  color: #555; /* Text color */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.draggable-widget {
+  cursor: grab;
+  user-select: none;
+}
